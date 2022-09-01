@@ -1,0 +1,30 @@
+/* 主区域内容 */
+.home {
+	/* 相对定位 */
+	position: absolute;
+	top: 0;
+	left: 250px;
+	height: 100vh;
+	width: calc(100% - 250px);
+	background-color: var(--body-color);
+	transition: var(--tran-03);
+}
+
+/* 主区域文本 */
+.home .text {
+	font-size: 30px;
+	font-weight: 500;
+	color: var(--text-color);
+	padding: 12px 60px;
+}
+
+.sidebar.close ~ .home {
+	left: 98px;
+	height: 100vh;
+	width: calc(100% - 78px);
+}
+
+/* 暗黑模式下的主区域文本 */
+body.dark .home .text {
+	color: var(--text-color);
+}
