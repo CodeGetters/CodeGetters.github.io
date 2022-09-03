@@ -1,0 +1,85 @@
+/* 标题区域 */
+.main .header {
+	width: 100%;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	user-select: none;
+	font-size: 20px;
+}
+
+/* 介绍区域 */
+.main .introBox {
+	padding-left: 100px;
+	width: 100%;
+	height: 300px;
+	display: flex;
+}
+
+/* 图片展示 */
+.main .introBox .intro-pic {
+	width: 260px;
+	height: 300px;
+	line-height: 300px;
+	border-radius: 6px;
+	user-select: none;
+}
+
+/* 图片 */
+.main .introBox .intro-pic img {
+	width: 260px;
+	height: 300px;
+	border-radius: 6px;
+}
+
+/* 介绍文字 */
+.main .introBox .intro-text{
+	border-radius: 6px;
+	margin-left: 60px;
+	margin-right: 60px;
+	padding-top: 20px;
+	min-width: 600px;
+	display: block;
+	text-indent: 2em;
+	line-height: 24px;
+	height: 300px;
+	transition: all .3s;
+	/* border: 1px solid #ccc; */
+}
+
+/* 标题 */
+.main .introBox .intro-text span{
+	font-size: 25px;
+}
+
+/* 描述区域 */
+.main .introBox .intro-text .intro-desc{
+	font-size: 17px;
+	color: #626675;
+	margin-top: 10px;
+}
+
+/* 详细信息 */
+.main .introBox .intro-text .intro-msg{
+	font-size: 15px;
+}
+
+/* 人物评价 */
+.main .about{
+	width: 100%;
+	position: relative;
+	margin-top: 50px;
+	border-top: 1px dashed #ccc;
+}
+
+.main .about .abt-intro{
+	position: absolute;
+	font-size: 20px;
+	font-weight: 600;
+	top: -14px;
+	left: 100px;
+}
+
+.main .about .abt-intro-text{
+	padding-top: 40px;
+}

@@ -3,125 +3,170 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- 图标组件库 -->
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1.0,user-scalable=0,maximum-scale=1.0,minimum-scale=1.0"
+		/>
+		<!-- 引入图标 -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<!-- 引入组件图标库 -->
 		<link
-			href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+			href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.0/css/all.css"
 			rel="stylesheet"
 		/>
-        <!-- favicon.ico图标 -->
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<!-- 主区域样式 -->
-		<link rel="stylesheet" href="css/home.css" />
-		<!-- 侧边栏样式 -->
-		<link rel="stylesheet" href="css/sidebar.css" />
-		<!-- 公共样式 -->
-		<link rel="stylesheet" href="css/common.css" />
-		<title>Jackson - 我之所以成为我，是因为有你！</title>
+        <!-- 引入侧边栏公共样式表 -->
+        <link rel="stylesheet" href="css/aside-com.css">
+        <!-- 引入侧边栏 css 文件 -->
+        <link rel="stylesheet" href="css/aside.css">
+        <!-- 引入首页 css 文件 -->
+        <link rel="stylesheet" href="css/index.css">
+        <!-- 引入主区域样式 -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- 引入主区域公共样式 -->
+        <link rel="stylesheet" href="css/main-com.css">
+		<title>易烊千玺 - 怀抱善与爱，一起打败生活的难！</title>
 	</head>
 
 	<body>
 		<!-- 侧边栏区域 -->
-		<nav class="sidebar close">
-			<!-- 头像及 logo 区域框 -->
-			<header>
-				<!-- 头像及 logo 区域 -->
-				<div class="image-text">
-					<!-- 头像 -->
-					<span class="image">
-						<img src="img/0.webp" alt="" />
-					</span>
-					<!-- 头像框旁的文字 -->
-					<div class="text logo-text">
-						<span class="name">易烊千玺</span>
-						<span class="profession">愿光永在...</span>
-					</div>
-				</div>
-				<!-- 打开关闭侧边栏图标 -->
-				<i class="bx bx-chevron-right toggle"></i>
-			</header>
-			<!-- 图标组件栏 -->
-			<div class="menu-bar">
-				<div class="menu">
-					<!-- 搜索框 -->
-					<li class="search-box">
-						<i class="bx bx-search icon"></i>
-						<input type="text" placeholder="搜索..." />
-					</li>
-					<!-- 其他图标 -->
-					<ul class="menu-links">
-						<li class="nav-link">
-							<a href="#">
-								<i class="bx bx-home-alt icon"></i>
-								<span class="text nav-text">主页</span>
-							</a>
-						</li>
-						<li class="nav-link">
-							<a href="#">
-								<i class="bx bx-bar-chart-alt-2 icon"></i>
-								<span class="text nav-text">获奖</span>
-							</a>
-						</li>
+		<div class="aside close">
+            <!-- 头像、账户名和个性签名区域 -->
+            <div class="con-account">
+                <!-- 头像区域 -->
+                <!-- 点击头像上传头像文件 -->
+                <input class="con-ava" type="file" hidden accept="image/jpg/png">
+                <div class="avator">
+                    <!-- <i class="fa-solid fa-user"></i> -->
+                    <img src="images/01.webp" alt="">
+                </div>
+                </input>
+                <!-- 账户名区域 -->
+                <div class="acc-text">
+                    <span class="name">易烊千玺</span>
+                    <!-- 个性签名 -->
+                    <span class="signature">该用户什么都没有留下...</span>
+                </div>
+                <!-- 头像旁的开启关闭箭头图标 -->
+                <div class="side-toggle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+            </div>
+            <!-- 图标组件列 -->
+            <div class="menu-bar">
+                <div class="menu">
+                    <!-- 搜索 -->
+                    <li class="searchBox" title="搜索">
+                        <i class="fa-solid fa-magnifying-glass icon"></i>
+                        <input type="text" placeholder="搜索...">
+                    </li>
+                    <!-- 其他组件 -->
+                    <ul>
+                        <li>
+                            <a href="#" title="登录">
+                                <i class="fa-solid fa-check icon"></i>
+                                <span>登录</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="主页">
+                                <i class="fa-solid fa-house icon"></i>
+                                <span>主页</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="获奖">
+                                <i class="fa-regular fa-star icon"></i>
+                                <span>获奖</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="照片墙">
+                                <i class="fa-solid fa-palette icon"></i>
+                                <span>照片墙</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="其它">
+                                <i class="fa-regular fa-heart icon"></i>
+                                <span>其它</span>
+                            </a>
+                        </li>
+                       
+                        <li>
+                            <a href="#" title="设置">
+                                <i class="fa-solid fa-gears icon"></i>
+                                <span>设置</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 切换模式和退出按钮 -->
+                    <div class="change-out">
+                        <!-- 退出 -->
+                        <li class="logout">
+                            <a href="#" title="退出登录">
+                                <i class="fa-solid fa-arrow-right-from-bracket icon"></i>
+                                <span>退出登录</span>
+                            </a>
+                        </li>
+                        <!-- 切换模式按钮 -->
+                        <li class="mode">
+                            <!-- 模式 -->
+                            <!-- <div class="sun-moon">
+                                <i class="fa-solid fa-sun icon"></i>
+                                <i class="fa-solid fa-moon icon"></i>
+                                <span>明亮模式</span>
+                            </div> -->
+                            <!-- 模式切换开关 -->
+                            <!-- <div class="mode-toggle">
+                                <span class="switch"></span>
+                            </div> -->
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- 主区域 -->
+		<div class="main">
+            <!-- 标题区域 -->
+            <div class="header">
+                <h1>关于易烊千玺</h1>
+            </div>
+            <!-- 介绍区域 -->
+            <div class="introBox">
+                <!-- 图片 -->
+                <div class="intro-pic">
+                    <a href="#">
+                        <img src="images/02.jpg" alt="">
+                    </a>
+                </div>
+                <!-- 文字介绍 -->
+                <div class="intro-text">
+                    <span>
+                        <h3>易烊千玺</h3>
+                    </span>
+                    <div class="intro-desc">
+                        中国内地男演员、歌手、舞者
+                    </div>
+                    <div class="intro-msg">
+                        易烊千玺，2000年11月28日生于湖南省怀化市洪江市，中国内地男演员、歌手、舞者，演唱组合TFBOYS成员，毕业于中央戏剧学院。
+                        2005年，首登电视荧屏。2009年，加入飞炫少年组合。2013年，加入TFBOYS。2015年，声演法国动画电影《小王子》男主角；自编舞蹈《IF YOU》《RHYTHM TA》，
+                        创下爱奇艺生日会直播在线用户数据最高纪录。2016年，获得第16届音乐风云榜最受欢迎偶像。...
+                        2018年4月，易烊千玺以94.8的考分位列中央戏剧学院2018年艺术类考试话剧影视表演专业全国第一名。7月，易烊千玺以文化、专业双科第一的成绩被中央戏剧学院表演系话剧影视表演专业录取（录取编号：B001），其中文化课高考全国一卷成绩总分为473分，高出艺考分数线132分 。
+                        2020年，完成男女十大刊封面满贯；领衔主演的电影《送你一朵小红花》上映，累计票房超14亿元。2021年，担任北京国际电影节青年宣传推广大使；蝉联福布斯中国名人榜榜首；9月30日，主演的《长津湖》上映
+                    </div>
+                </div>
+            </div>
+             <!-- 人物评价 -->
+             <div class="about">
+                <span class="abt-intro">关于他</span>
+                <div class="abt-intro-text">
+                    <p>出生于湖南怀化的易烊千玺，身上流淌着楚文化和湖湘文化的基因，多才多艺，自幼喜好书法，浸润传统文化熏陶（凤凰娱乐评） 。他有着同龄人的单纯和善良，但同时又有着超越年龄的执着和坚持，有才情却不张扬（新华娱乐、新浪娱乐评） 。长相清秀出众，性格幽默风趣，品学兼优，唱跳俱佳。熟悉多种舞蹈，除了跳舞，还会跆拳道、魔术、书法、绘画、变脸、乐器等多项技能。他是TFBOYS里最小的成员，多才多艺而不张扬炫耀，勤奋努力而不自我满足，低调内敛，热心公益（北青网、中国网、新浪公益评）</p>
+                    <p>易烊千玺眼神里有故事；他是我见过最美好的少年；演戏特别真诚，也特别有爆发力，他真的厉害；前途不可限量。我在他的眼睛、肢体语言里面看到了“火”，是一个非常了不起的演员；易烊千玺不像一个初出茅庐的演员，处处透出成熟和稳定；他彻底摆脱了少年偶像的枷锁，进入了一个属于演员的广阔天地。易烊千玺在《少年的你》中首次担任主角，就让大屏幕电光火石，爆发的你让人看到年青一代的新希望；他演出了极具质感的少年意气：强硬下的呵护，温存时的迷惘，沉默后的决绝均饱满而富于力量，让他有时像一块坚硬的石头，有时又像一汪可以捧在手心里的清水。他在片中更多的时候像一个影子，投射出我们对青春所特有的怀念（曾国祥、许月珍、周冬雨、刘嘉玲、马伊琍、周黎明、电影频道M榜评）；清晰地拿捏住了少年与男人之间的分寸感，把电影中的小北“演活了”（福布斯中国评）。易烊千玺在电影《少年的你》中打破偶像包袱，在人物的表演上细致而有力度，尤其是在微表情的处理上，将人物内心的挣扎和矛盾，有节奏、有层次的释放在大荧幕前，准确表达出角色单纯、孤独、倔强的特质，也使得这部以“反欺凌、反暴力”的影片散发出人性的光彩（上海影评人奖颁奖词）</p>
+                    <p>易烊千玺具备流量、人气和实力，在流量范畴内做了一个最优秀的典范。（章子怡评）。易烊千玺不仅记台词功力深厚，还有演打戏的天分。他的悟性、灵感特别好（导演汪俊、邓细斌评）。易烊千玺声演的《小王子》并没有刻意去模仿小孩子的声音，而是用他本身的音色特质不疾不徐地自然展现，松弛而干净的声音与小王子的人物个性特点契合得更为传神，留给观众唯美的想象空间（新华娱乐、新浪娱乐评）</p>
+                </div>
+            </div>
+        </div>
 
-						<li class="nav-link">
-							<a href="#">
-								<i class="bx bx-bell icon"></i>
-								<span class="text nav-text">消息</span>
-							</a>
-						</li>
-
-						<li class="nav-link">
-							<a href="#">
-								<i class="bx bx-pie-chart-alt icon"></i>
-								<span class="text nav-text">数据</span>
-							</a>
-						</li>
-
-						<li class="nav-link">
-							<a href="#">
-								<i class="bx bx-heart icon"></i>
-								<span class="text nav-text">喜欢</span>
-							</a>
-						</li>
-
-						<li class="nav-link">
-							<a href="#">
-								<i class="bx bx-wallet icon"></i>
-								<span class="text nav-text">其他</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<!-- 最后两个按钮 -->
-				<div class="bottom-content">
-					<!-- 退出 -->
-					<li>
-						<a href="#">
-							<i class="bx bx-log-out icon"></i>
-							<span class="text nav-text">退出登录</span>
-						</a>
-					</li>
-					<!-- 模式切换区域 -->
-					<li class="mode">
-						<div class="sun-moon">
-							<i class="bx bx-moon icon moon"></i>
-							<i class="bx bx-sun icon sun"></i>
-						</div>
-						<span class="mode-text text">护眼模式</span>
-						<!-- 开关按钮 -->
-						<div class="toggle-switch">
-							<span class="switch"></span>
-						</div>
-					</li>
-				</div>
-			</div>
-		</nav>
-		<!-- 主内容区域 -->
-		<section class="home">
-			<div class="text">易烊千玺</div>
-		</section>
-
-		<script src="js/sidebar.js"></script>
-		<script src="js/home.js"></script>
+        <script src="js/aside.js"></script>
 	</body>
 </html>
