@@ -1,0 +1,84 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+	user-select: none;
+}
+
+body {
+	background-color: rgb(129 2 1);
+}
+
+/* 百叶窗盒子 */
+.shades {
+	width: 100%;
+	height: 100vh;
+}
+
+/* 百叶窗区域 */
+.shades ul {
+	width: 1400px;
+	height: 600px;
+	display: flex;
+	margin: 10px auto;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+/* 每一个 li  */
+.shades ul li {
+	width: 280px;
+	height: 600px;
+	float: left;
+	position: relative;
+	transition: all 0.3s;
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.shades ul li a {
+	width: 100%;
+	height: 100%;
+}
+
+/* 文字 */
+.shades ul li span {
+	width: 100%;
+	height: 25px;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	line-height: 25px;
+	position: absolute;
+	display: none;
+}
+
+/* 文字 hover */
+.shades ul li:hover span {
+	display: block;
+}
+
+/* 图片 */
+.shades ul li img {
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+ul:hover li {
+	width: 175px;
+}
+
+ul li:hover {
+	width: 700px;
+}
+
+/* 文本区域 */

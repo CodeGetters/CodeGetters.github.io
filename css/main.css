@@ -1,3 +1,8 @@
+p{
+    font-size: 15px;
+    text-indent: 2em;
+    color: #626675;
+}
 /* 标题区域 */
 .main .header {
 	width: 100%;
@@ -71,6 +76,7 @@
 	margin-top: 50px;
 	border-top: 1px dashed #ccc;
 }
+
 
 .main .about .abt-intro{
 	position: absolute;
