@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+pre{
+    user-select: none;
+    color: #fff;
+    font-size: 20px; 
+}
+
+body{
+    background: url(../images/08.jpg) no-repeat;
+    background-position: -100px -100px;
+}
+
+/* 容器 */
+.container{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 作者个人信息 */
+.author{
+    position: absolute;
+    left: 78px;
+}
+
+/* 创作目的 */
+.purpose{
+    position: absolute;
+    left: 0;
+    bottom: 180px;
+}
+
+button{
+    bottom:100px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 150px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+	cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 0 0 15px rgba(255, 255, 255, .3);
+}
